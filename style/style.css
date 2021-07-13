@@ -14,7 +14,7 @@ body{
     padding-left: 5px;
 }
 
-
+/* top section style start */
 header{
     background-color: #2D25A0;
 }
@@ -47,4 +47,63 @@ nav a{
 }
 .half-width img{
     width: 100%;
+}
+
+.half-width img:hover{
+    transform: scale(1.2);
+    transition: transform 1s ease-in;
+}
+.half-width #button:hover{
+    background-color: rgb(200, 255, 70);
+    color: rgb(70, 24, 51);
+}
+/* top section style end */
+
+/* players section style start */
+.players{
+    margin: 50px 120px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-column-gap: 10px; */
+}
+.player{
+    width: 300px;
+    height: 474px;
+    padding: 15px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    margin: 15px;
+}
+.player:hover{
+    box-shadow: 0 14px 28px rgb(201, 180, 183), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.player img{
+    width: 300px;
+    height: 256px;
+}
+.player h1{
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 40px;
+}
+.player p{
+    font-size: 16px;
+    line-height: 26px;
+    font-feature-settings: 'liga' off;
+    color: #6C6C6C;
+}
+/* player section end */
+
+/* Highlight section start */
+.highlight-section{
+    margin: 0 124px 0 156px;
+}
+.highlight-section h1{
+    font-size: 48px;
+    color: black;
+    line-height: 70px;
+}
+.highlight-section p{
+    font-size: 16px;
+    line-height: 28px;
 }
