@@ -107,3 +107,80 @@ nav a{
     font-size: 16px;
     line-height: 28px;
 }
+.highlight-section .half-width{
+    overflow: hidden;
+}
+/* highlight section end */
+
+/* footer start */
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-logo img{
+    width: 450px;
+    height: 150px;
+}
+.footer-icon i{
+    background-color: #e7e7e8;
+    font-size: 17px;
+    padding: 7px;
+    border-radius: 15px;
+    color:#969BAB;
+}
+/* footer end */
+
+/* media query start*/
+
+/* mobile device */
+@media only screen and (max-width:688px){
+    nav{
+        display: none;
+    }
+    .top-section {
+        margin: 0px 16px;
+    }
+    .banner{
+        display: flex;
+        flex-direction: column;
+    }
+    .banner h1{
+        font-size: 36px;
+        line-height: 50px;
+    }
+    .button{
+           padding: 5px 12px; 
+    }
+    .half-width img {
+        width: 100%;
+        padding: 30px 0px;
+    }
+
+    .players{
+        grid-template-columns: repeat(1,1fr);
+        margin: 10px;
+    }
+    .highlight-section {
+        margin: 12px;
+    }
+    .highlight-section h1{
+        font-size: 30px;
+        color: black;
+        line-height: 40px;
+    }
+    .highlight-section img{
+        width: 328px;
+        height: 248px;
+    }
+    .half-width {
+        width: 100%;
+    }
+    .footer-logo img {
+        width: 70%;
+        height: 100px;
+        margin-left: 50px;
+    }
+
+}
