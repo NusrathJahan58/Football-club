@@ -112,6 +112,41 @@ nav a{
 }
 /* highlight section end */
 
+/* gallery start*/
+.gallery-section{
+    margin: 20px 40px;
+    text-align: center;
+    font-size: 40px;
+}
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.gallery img{
+    width: 400px;
+    height: 250px;
+    padding: 5px;
+    margin-left: 10px;
+}
+.gallery img:hover{
+    transform: scale(1.1);
+    transition: transform 1s ease
+}
+/* gallery ends */
+
+/* video start */
+.video-section{
+    margin: 20px 40px;
+    text-align: center;
+    font-size: 40px;
+}
+.videos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* video end */
+
 /* footer start */
 .footer{
     display: flex;
@@ -129,6 +164,9 @@ nav a{
     padding: 7px;
     border-radius: 15px;
     color:#969BAB;
+}
+.footer-icon i:hover{
+    background-color: blue;
 }
 /* footer end */
 
@@ -155,7 +193,7 @@ nav a{
     }
     .half-width img {
         width: 100%;
-        padding: 30px 0px;
+        padding-top: 30px;
     }
 
     .players{
@@ -177,10 +215,33 @@ nav a{
     .half-width {
         width: 100%;
     }
+    .gallery-section{
+        margin: 0px;
+        margin-bottom: 50px;
+    }
+    .gallery{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .gallery img{
+        width: 300px;
+    }
+    .video-section{
+        margin: 0px;
+        margin-bottom: 50px;
+    }
+    .videos{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .video iframe{
+        width: 300px;
+        height: 250px;
+    }
     .footer-logo img {
         width: 70%;
         height: 100px;
         margin-left: 50px;
     }
+/* mobile device end */
+/* media query ends */
 
 }
